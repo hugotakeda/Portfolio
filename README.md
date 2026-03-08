@@ -1,73 +1,74 @@
-# React + TypeScript + Vite
+# 🗂️ Portfolio — Hugo Takeda
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Portfólio profissional desenvolvido com React, TypeScript, Vite e Tailwind CSS. Design minimalista Dark Mode, animações com Framer Motion e hospedagem na Vercel.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Stack
 
-## React Compiler
+| Tecnologia | Função |
+|---|---|
+| **React + TypeScript** | Base da aplicação |
+| **Vite** | Build tool e dev server |
+| **Tailwind CSS v4** | Estilização utilitária |
+| **Framer Motion** | Animações e transições |
+| **Lucide React** | Ícones minimalistas |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🎬 **Tela de Loading animada** — contador de progresso com fade de entrada
+- 🌑 **Dark Mode full** — fundo #0A0A0A com grid sutil e radial glow
+- 📌 **Navbar fixa** com rolagem suave para cada seção
+- 🃏 **Cards de Projetos** com imagem, tags de tecnologia e links para GitHub/Live
+- 💡 **Animações on-scroll** (Framer Motion) em todas as seções
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📂 Estrutura
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/
+│   ├── Hero.tsx      # Seção inicial com headline
+│   ├── About.tsx     # Narrativa técnica e linguagens
+│   ├── Projects.tsx  # Grid de projetos com imagem
+│   ├── Skills.tsx    # Arsenal técnico categorizado
+│   └── Loader.tsx    # Tela de loading animada
+├── App.tsx           # Composição geral e navegação
+└── index.css         # Design tokens e utilitários
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🖼️ Projetos em Destaque
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **SafeAccess** — Controle de acesso IoT com reconhecimento facial (Python + ESP32)
+- **MedalBypass** — Downloader web de clipes sem marca d'água (TypeScript)
+- **Smart Monitor PIR** — Alarme IoT com notificações Discord (Node.js)
+
+---
+
+## ▶️ Como rodar
+
+```bash
+npm install
+npm run dev
 ```
+
+Acesse: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🌍 Deploy
+
+Hospedado na **Vercel**. Para fazer o seu próprio deploy:
+
+1. Faça o push do projeto para o GitHub
+2. Importe o repositório no painel da [Vercel](https://vercel.com)
+3. Clique em **Deploy** — o build é detectado automaticamente
+
+---
+
+Desenvolvido por **Hugo Takeda** · [@hugotakeda](https://github.com/hugotakeda)
