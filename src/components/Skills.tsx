@@ -68,9 +68,9 @@ export function Skills() {
               </h3>
               <ul className="space-y-4">
                 {category.skills.map((skill, i) => (
-                  <li key={i} className="text-[#a3a3a3] text-sm flex items-center gap-4">
-                    <span className="w-1 h-1 rounded-full bg-[#444444] transition-all group-hover:bg-white/40 group-hover:scale-150"></span>
-                    <span className="font-light">{skill}</span>
+                  <li key={i} className="text-[#e5e5e5] text-sm flex items-center gap-4">
+                    <span className="w-1 h-1 rounded-full bg-[#666666] transition-all group-hover:bg-white/80 group-hover:scale-150 shrink-0"></span>
+                    <span>{skill}</span>
                   </li>
                 ))}
               </ul>

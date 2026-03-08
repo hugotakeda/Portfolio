@@ -16,7 +16,7 @@ const projects = [
     solution: "Uma ferramenta web assíncrona, direta ao ponto e extremamente minimalista. O sistema faz bypass e age como extrator, entregando instantaneamente o link do arquivo .mp4 nativo em 1-click.",
     tech: ["TypeScript", "Web Scraping", "DOM Manipulation"],
     github: "https://github.com/hugotakeda/MedalBypass",
-    live: "https://medal-bypass-nine.vercel.app",
+    live: "https://medal-bypass-pts.vercel.app",
     image: "/projeto-medal.jpg" // Coloque sua imagem na pasta public
   },
   {

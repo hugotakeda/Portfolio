@@ -31,8 +31,9 @@ function App() {
         {loading && <Loader onLoadingComplete={() => setLoading(false)} />}
       </AnimatePresence>
 
-      <div className={`bg-[#0A0A0A] bg-grid min-h-screen text-[#ededed] font-sans selection:bg-white/20 transition-opacity duration-1000 ${loading ? 'opacity-0 h-screen overflow-hidden' : 'opacity-100'}`}>
-        <div className="absolute inset-0 bg-glow pointer-events-none"></div>
+      <div className={`bg-[#0A0A0A] relative min-h-screen text-[#ededed] font-sans selection:bg-white/20 transition-opacity duration-1000 ${loading ? 'opacity-0 h-screen overflow-hidden' : 'opacity-100'}`}>
+        {/* Camada de background isolada — grid + glow sem afetar os textos */}
+        <div className="absolute inset-0 bg-grid bg-glow pointer-events-none z-0"></div>
         <nav className="fixed w-full top-0 z-50 bg-[#0A0A0A]/80 backdrop-blur-md border-b border-[#222222]/50">
           <div className="max-w-6xl mx-auto px-6 md:px-20 h-20 flex items-center justify-between">
             <a href="#" onClick={(e) => scrollToSection(e, 'root')} className="text-white font-medium tracking-wide">HUGO TAKEDA</a>
