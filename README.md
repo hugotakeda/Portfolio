@@ -1,10 +1,10 @@
-# 🗂️ Portfolio — Hugo Takeda
+# Portfolio — Hugo Takeda
 
 > Portfólio profissional desenvolvido com React, TypeScript, Vite e Tailwind CSS. Design minimalista Dark Mode, animações com Framer Motion e hospedagem na Vercel.
 
 ---
 
-## 🚀 Stack
+## Stack
 
 | Tecnologia | Função |
 |---|---|
@@ -16,17 +16,17 @@
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-- 🎬 **Tela de Loading animada** — contador de progresso com fade de entrada
-- 🌑 **Dark Mode full** — fundo #0A0A0A com grid sutil e radial glow
-- 📌 **Navbar fixa** com rolagem suave para cada seção
-- 🃏 **Cards de Projetos** com imagem, tags de tecnologia e links para GitHub/Live
-- 💡 **Animações on-scroll** (Framer Motion) em todas as seções
+- **Tela de Loading animada** — contador de progresso com fade de entrada
+- **Dark Mode full** — fundo #0A0A0A com grid sutil e radial glow
+- **Navbar fixa** com rolagem suave para cada seção
+- **Cards de Projetos** com imagem, tags de tecnologia e links para GitHub/Live
+- **Animações on-scroll** (Framer Motion) em todas as seções
 
 ---
 
-## 📂 Estrutura
+## Estrutura
 
 ```
 src/
@@ -42,7 +42,7 @@ src/
 
 ---
 
-## 🖼️ Projetos em Destaque
+## Projetos em Destaque
 
 - **SafeAccess** — Controle de acesso IoT com reconhecimento facial (Python + ESP32)
 - **MedalBypass** — Downloader web de clipes sem marca d'água (TypeScript)
@@ -50,7 +50,7 @@ src/
 
 ---
 
-## ▶️ Como rodar
+## Como rodar
 
 ```bash
 npm install
@@ -61,7 +61,7 @@ Acesse: [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 🌍 Deploy
+## Deploy
 
 Hospedado na **Vercel**. Para fazer o seu próprio deploy:
 
