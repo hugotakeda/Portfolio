@@ -1,74 +1,39 @@
-# Portfolio — Hugo Takeda
+# Portfolio
 
-> Portfólio profissional desenvolvido com React, TypeScript, Vite e Tailwind CSS. Design minimalista Dark Mode, animações com Framer Motion e hospedagem na Vercel.
+**Minimalist Software Engineer Portfolio.**  
 
----
+A high-performance, dark-mode-first portfolio designed to showcase Full-Stack, IoT, and AI expertise. Built with a focus on "Quiet Luxury" aesthetics and smooth interactive experiences.
 
-## Stack
+## Core Stack
 
-| Tecnologia | Função |
+| Layer | Technology |
 |---|---|
-| **React + TypeScript** | Base da aplicação |
-| **Vite** | Build tool e dev server |
-| **Tailwind CSS v4** | Estilização utilitária |
-| **Framer Motion** | Animações e transições |
-| **Lucide React** | Ícones minimalistas |
+| **Framework** | React + Vite |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS v4 |
+| **Animations** | Framer Motion |
 
----
+## Features
 
-## Funcionalidades
+- **Animated Loading:** Custom pre-loader with smooth fade transitions.
+- **Quiet Luxury UI:** Deep dark background (#0A0A0A) with subtle grid and radial glows.
+- **Project Grid:** Dynamic cards showcasing IoT and Full-Stack development.
+- **Interactive Layers:** Smooth on-scroll animations and responsive navigation.
 
-- **Tela de Loading animada** — contador de progresso com fade de entrada
-- **Dark Mode full** — fundo #0A0A0A com grid sutil e radial glow
-- **Navbar fixa** com rolagem suave para cada seção
-- **Cards de Projetos** com imagem, tags de tecnologia e links para GitHub/Live
-- **Animações on-scroll** (Framer Motion) em todas as seções
+## Project Structure
 
----
+- `src/components/Loader.tsx`: Custom animated entry screen.
+- `src/components/Hero.tsx`: Main headline and professional summary.
+- `src/components/Projects.tsx`: Portfolio showcase grid.
+- `src/components/Skills.tsx`: Categorized tech stack visualization.
 
-## Estrutura
-
-```
-src/
-├── components/
-│   ├── Hero.tsx      # Seção inicial com headline
-│   ├── About.tsx     # Narrativa técnica e linguagens
-│   ├── Projects.tsx  # Grid de projetos com imagem
-│   ├── Skills.tsx    # Arsenal técnico categorizado
-│   └── Loader.tsx    # Tela de loading animada
-├── App.tsx           # Composição geral e navegação
-└── index.css         # Design tokens e utilitários
-```
-
----
-
-## Projetos em Destaque
-
-- **SafeAccess** — Controle de acesso IoT com reconhecimento facial (Python + ESP32)
-- **MedalBypass** — Downloader web de clipes sem marca d'água (TypeScript)
-- **Smart Monitor PIR** — Alarme IoT com notificações Discord (Node.js)
-
----
-
-## Como rodar
+## Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Acesse: [http://localhost:5173](http://localhost:5173)
-
 ---
 
-## Deploy
-
-Hospedado na **Vercel**. Para fazer o seu próprio deploy:
-
-1. Faça o push do projeto para o GitHub
-2. Importe o repositório no painel da [Vercel](https://vercel.com)
-3. Clique em **Deploy** — o build é detectado automaticamente
-
----
-
-Desenvolvido por **Hugo Takeda** · [@hugotakeda](https://github.com/hugotakeda)
+[MIT](./LICENSE) © 2025 hugotakeda
