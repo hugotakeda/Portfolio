@@ -408,17 +408,62 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+  }
   .tui-container {
     flex-direction: column;
     height: 100vh;
     border: none;
+    box-shadow: none;
   }
   .tui-sidebar {
     width: 100%;
     border-right: none;
     border-bottom: 1px solid var(--border-color);
+    padding: 15px;
+  }
+  .sidebar-header {
+    margin-bottom: 15px;
+  }
+  .nav-section {
+    margin-bottom: 15px;
+  }
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .nav-item {
+    margin-bottom: 0;
+    padding: 6px 10px;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .nav-item:hover {
+    border-left: 0;
+    border-bottom: 2px solid var(--border-hover);
+  }
+  .nav-item.active {
+    border-left: 0;
+    border-bottom: 2px solid var(--color-pink);
+  }
+  .tui-main {
+    padding: 15px;
   }
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+  .terminal-block {
+    font-size: 11px;
+    padding: 10px;
+    overflow-x: auto;
+  }
+  .fetch-val {
+    flex-shrink: 0;
+  }
+  .window-header {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
