@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hugo Takeda - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="app" class="tui-container">
+
+    <!-- Left Sidebar (Navigation) -->
+    <nav class="tui-sidebar">
+      <div class="sidebar-header">
+        <span class="user-avatar">H</span>
+        <div class="user-info">
+          <span class="username">hugotakeda</span>
+          <span class="status text-pink" data-i18n="status-online">online</span>
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title" data-i18n="nav-title">navigation</div>
+        <ul class="nav-list">
+          <li class="nav-item active" data-target="about">
+            <span class="nav-icon text-blue">~</span>
+            <span class="nav-label" data-i18n="nav-about">/about</span>
+          </li>
+          <li class="nav-item" data-target="projects">
+            <span class="nav-icon text-green">#</span>
+            <span class="nav-label" data-i18n="nav-projects">/projects</span>
+          </li>
+          <li class="nav-item" data-target="contact">
+            <span class="nav-icon text-yellow">@</span>
+            <span class="nav-label" data-i18n="nav-contact">/contact</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title" data-i18n="sys-title">system</div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <span class="nav-icon text-purple">></span>
+            <span class="nav-label"><span data-i18n="uptime-label">uptime:</span> <span id="uptime">0h 0m</span></span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="tui-main">
+
+      <!-- About Section -->
+      <section id="about" class="content-section active">
+        <div class="tui-window">
+          <div class="window-header">
+            <span class="window-title">system24 - hugotakeda</span>
+            <div class="window-controls">
+              <span class="lang-toggle text-yellow">[PT-BR]</span>
+              <span class="control close"></span>
+              <span class="control max"></span>
+              <span class="control min"></span>
+            </div>
+          </div>
+          <div class="window-content">
+            <h1 class="logo-text">system<span class="text-pink">24</span></h1>
+            <p class="subtitle" data-i18n="subtitle">a tui-style portfolio.</p>
+
+            <div class="terminal-block">
+              <div class="fetch-header">
+                <span class="text-pink">hugo</span>@<span class="text-pink">takeda</span> <span class="text-muted">-------------------------</span>
+              </div>
+              <div class="fetch-info">
+                <div class="fetch-row"><span class="fetch-label">. OS:</span><span class="fetch-dots">...................</span><span class="fetch-val">Windows, Linux, IoT</span></div>
+                <div class="fetch-row"><span class="fetch-label">. Uptime:</span><span class="fetch-dots">...............</span><span class="fetch-val" id="about-uptime">Loading...</span></div>
+                <div class="fetch-row"><span class="fetch-label">. Host:</span><span class="fetch-dots">.................</span><span class="fetch-val" data-i18n="fetch-host">Back-end & Automation Engineer</span></div>
+                <div class="fetch-row"><span class="fetch-label">. Kernel:</span><span class="fetch-dots">...............</span><span class="fetch-val">Node.js, Shell, Hardware</span></div>
+                <br>
+                <div class="fetch-row"><span class="fetch-label">. Languages.Programming:</span><span class="fetch-dots">.</span><span class="fetch-val">TypeScript, JavaScript, Shell</span></div>
+                <div class="fetch-row"><span class="fetch-label" data-i18n="fetch-lang-comp-lbl">. Languages.Computer:</span><span class="fetch-dots">....</span><span class="fetch-val">HTML, CSS, JSON, YAML</span></div>
+                <div class="fetch-row"><span class="fetch-label" data-i18n="fetch-lang-real-lbl">. Languages.Real:</span><span class="fetch-dots">........</span><span class="fetch-val" data-i18n="fetch-lang-real">Portuguese, English</span></div>
+                <br>
+                <div class="fetch-row"><span class="fetch-label">. Hobbies.Software:</span><span class="fetch-dots">......</span><span class="fetch-val">Bots, Dashboards, APIs</span></div>
+                <div class="fetch-row"><span class="fetch-label">. Hobbies.Hardware:</span><span class="fetch-dots">......</span><span class="fetch-val">ESP32, Smart Home, NAS</span></div>
+                <br>
+                <div class="fetch-header">
+                  <span class="text-muted" data-i18n="fetch-contact-hdr">- Contact -------------------------</span>
+                </div>
+                <div class="fetch-row"><span class="fetch-label">. Email:</span><span class="fetch-dots">.................</span><span class="fetch-val">hugotakeda@gmail.com</span></div>
+                <div class="fetch-row"><span class="fetch-label">. GitHub:</span><span class="fetch-dots">................</span><span class="fetch-val">github.com/hugotakeda</span></div>
+                <div class="fetch-row"><span class="fetch-label">. LinkedIn:</span><span class="fetch-dots">..............</span><span class="fetch-val">linkedin.com/in/hugotakeda</span></div>
+                <br>
+                <div class="fetch-header">
+                  <span class="text-muted" data-i18n="fetch-stats-hdr">- GitHub Stats --------------------</span>
+                </div>
+                <div class="fetch-row"><span class="fetch-label" data-i18n="fetch-repos">. Repos:</span><span class="fetch-dots">.................</span><span class="fetch-val">17</span></div>
+                <div class="fetch-row"><span class="fetch-label" data-i18n="fetch-followers">. Followers:</span><span class="fetch-dots">.............</span><span class="fetch-val">13</span></div>
+              </div>
+              <div class="term-line mt-3"><span class="prompt">guest@portfolio:~$</span> <span class="cursor">_</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="content-section">
+        <div class="tui-window">
+          <div class="window-header">
+            <span class="window-title" data-i18n="win-repos">~/repositories</span>
+            <div class="window-controls">
+              <span class="lang-toggle text-yellow">[PT-BR]</span>
+              <span class="control close"></span>
+              <span class="control max"></span>
+              <span class="control min"></span>
+            </div>
+          </div>
+          <div class="window-content">
+            <div class="projects-grid">
+
+              <a href="https://github.com/hugotakeda/Media-Vault" target="_blank" class="project-card">
+                <div class="card-header">
+                  <span class="project-name text-pink">Media-Vault</span>
+                  <span class="project-lang badge-shell">Shell</span>
+                </div>
+                <div class="project-desc" data-i18n="repo-mediavault">Private Cloud (NAS) with Nextcloud and smart IoT photo capture. Uses Cloudflare Tunnels (Zero Trust).</div>
+                <div class="project-stats">★ 2</div>
+              </a>
+
+              <a href="https://github.com/hugotakeda/PIR-Detector" target="_blank" class="project-card">
+                <div class="card-header">
+                  <span class="project-name text-blue">PIR-Detector</span>
+                  <span class="project-lang badge-html">HTML</span>
+                </div>
+                <div class="project-desc" data-i18n="repo-pir">Intelligent IoT monitoring system (ESP32). Detects movement, captures images, sends alerts to Discord.</div>
+                <div class="project-stats">★ 2</div>
+              </a>
+
+              <a href="https://github.com/hugotakeda/Takeda-App" target="_blank" class="project-card">
+                <div class="card-header">
+                  <span class="project-name text-green">Takeda-App</span>
+                  <span class="project-lang badge-js">JavaScript</span>
+                </div>
+                <div class="project-desc" data-i18n="repo-takeda">Intuitive system analysis, cleaning, and optimization tool built with Electron. Keep your computer running smoothly.</div>
+                <div class="project-stats">★ 0</div>
+              </a>
+
+              <a href="https://github.com/hugotakeda/Auto-Wallet" target="_blank" class="project-card">
+                <div class="card-header">
+                  <span class="project-name text-yellow">Auto-Wallet</span>
+                  <span class="project-lang badge-ts">TypeScript</span>
+                </div>
+                <div class="project-desc" data-i18n="repo-wallet">A personal finance Discord bot tracking expenses with natural language and monthly limits.</div>
+                <div class="project-stats">★ 0</div>
+              </a>
+
+              <a href="https://github.com/hugotakeda/GitHub-Contribution-Graph" target="_blank" class="project-card">
+                <div class="card-header">
+                  <span class="project-name text-purple">GitHub-Contribution-Graph</span>
+                  <span class="project-lang badge-js">JavaScript</span>
+                </div>
+                <div class="project-desc" data-i18n="repo-graph">A custom graph mapping commits by time of day visualizing your circadian coding rhythm.</div>
+                <div class="project-stats">★ 0</div>
+              </a>
+
+              <a href="https://github.com/hugotakeda/GitHub-Stats-Card" target="_blank" class="project-card">
+                <div class="card-header">
+                  <span class="project-name text-pink">GitHub-Stats-Card</span>
+                  <span class="project-lang badge-js">JavaScript</span>
+                </div>
+                <div class="project-desc" data-i18n="repo-statscard">Dynamic GitHub statistics card displaying most-used languages and recent activity.</div>
+                <div class="project-stats">★ 0</div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="content-section">
+        <div class="tui-window">
+          <div class="window-header">
+            <span class="window-title" data-i18n="win-contact">/var/mail/contact</span>
+            <div class="window-controls">
+              <span class="lang-toggle text-yellow">[PT-BR]</span>
+              <span class="control close"></span>
+              <span class="control max"></span>
+              <span class="control min"></span>
+            </div>
+          </div>
+          <div class="window-content">
+            <div class="contact-links">
+              <a href="https://github.com/hugotakeda" target="_blank" class="contact-item">
+                <span class="contact-icon text-green">[GH]</span>
+                <span class="contact-text">github.com/hugotakeda</span>
+              </a>
+              <a href="mailto:hugotakeda@gmail.com" class="contact-item">
+                <span class="contact-icon text-blue">[EM]</span>
+                <span class="contact-text">hugotakeda@gmail.com</span>
+              </a>
+              <a href="https://www.linkedin.com/in/hugotakeda/" target="_blank" class="contact-item">
+                <span class="contact-icon text-purple">[LI]</span>
+                <span class="contact-text">linkedin.com/in/hugotakeda</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+  <script type="module" src="./main.js"></script>
+  <script src="./oneko.js"></script>
+</body>
+
+</html>
