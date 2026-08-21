@@ -327,15 +327,55 @@ body {
 }
 
 .project-desc {
-  color: var(--text-muted);
   font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  line-height: 1.4;
   flex-grow: 1;
-  margin-bottom: 15px;
+}
+
+/* Language Breakdown (GitHub style) */
+.lang-breakdown {
+  margin-bottom: 10px;
+}
+.lang-progress-bar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: var(--panel-bg);
+}
+.lang-segment {
+  height: 100%;
+}
+.lang-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 11px;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  color: var(--text-main);
+}
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.legend-pct {
+  color: var(--text-muted);
+  margin-left: 4px;
 }
 
 .project-stats {
   font-size: 12px;
   color: var(--color-yellow);
+  align-self: flex-end;
 }
 
 .badge-shell { color: #89e051; }
