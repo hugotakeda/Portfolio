@@ -148,6 +148,11 @@ body {
   border-left: 2px solid var(--color-pink);
 }
 
+.nav-item.no-click {
+  cursor: default;
+  pointer-events: none;
+}
+
 .nav-icon {
   font-weight: bold;
 }
